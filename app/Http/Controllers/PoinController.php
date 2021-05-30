@@ -25,17 +25,17 @@ class PoinController extends Controller
 
 	        foreach ($dataPoin as $p) {
 	            $item = [
-	                "id"          		 => $p->id,
-                  "id_siswa"         => $p->id_siswa,
-	                "nama_siswa"  		 => $p->nama_siswa,
+	                "id"          			 => $p->id,
+                    "id_siswa"        		 => $p->id_siswa,
+	                "nama_siswa"  			 => $p->nama_siswa,
 	                "kelas"  			     => $p->kelas,
-	                "nis"    	  		   => $p->nis,
-                  "id_pelanggaran"    => $p->id_pelanggaran,
-	                "nama_pelanggaran"  => $p->nama_pelanggaran,
-	                "kategori"  		   => $p->kategori,
-	                "poin"  			      => $p->poin,
-                  "keterangan"        => $p->keterangan,
-	                "tanggal" 			    => date('Y-m-d', strtotime($p->tanggal))
+	                "nis"    	  		     => $p->nis,
+                    "id_pelanggaran"    	 => $p->id_pelanggaran,
+	                "nama_pelanggaran"  	 => $p->nama_pelanggaran,
+	                "kategori"  		   	 => $p->kategori,
+	                "poin"  			     => $p->poin,
+                    "keterangan"        	 => $p->keterangan,
+	                "tanggal" 			     => date('Y-m-d', strtotime($p->tanggal))
 	            ];
 
 	            array_push($poin, $item);
